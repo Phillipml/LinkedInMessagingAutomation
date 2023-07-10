@@ -70,8 +70,13 @@ const fs = require("fs");
     await new Promise((resolve) => setTimeout(resolve, 2000));
     const message = process.env.MESSAGE_TO_SEND;
     const textArea = await page.$(".msg-form__contenteditable");
+    const name = await page.$eval(
+      ".text-heading-xlarge",
+      (element) => element.textContent
+    );
+    await textArea.type(`Olá, ${name}!\n`);
     await textArea.type(message);
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    await new Promise((resolve) => setTimeout(resolve, 4000));
     await page.waitForSelector(
       ".msg-form__send-button.artdeco-button.artdeco-button--1"
     );
@@ -86,6 +91,7 @@ const fs = require("fs");
     const closeButton = await page.$(
       ".msg-overlay-bubble-header__control.artdeco-button.artdeco-button--circle.artdeco-button--muted.artdeco-button--1.artdeco-button--tertiary.ember-view"
     );
+
     await closeButton.click();
   }
 })();
