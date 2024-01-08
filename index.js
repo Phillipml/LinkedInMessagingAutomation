@@ -60,10 +60,10 @@ const fs = require("fs");
     await page.goto(link);
     await new Promise((resolve) => setTimeout(resolve, 2000));
     await page.waitForSelector(
-      ".entry-point.pvs-profile-actions__action button"
+      ".artdeco-button.artdeco-button--2.artdeco-button--primary.ember-view.pvs-profile-actions__action"
     );
     const button = await page.$(
-      ".entry-point.pvs-profile-actions__action button"
+      ".artdeco-button.artdeco-button--2.artdeco-button--primary.ember-view.pvs-profile-actions__action"
     );
     await button.click();
 
@@ -74,7 +74,9 @@ const fs = require("fs");
       ".text-heading-xlarge",
       (element) => element.textContent
     );
-    await textArea.type(`Olá, ${name}!\n`);
+    const firstName = name.split(" ")[0];
+    console.log(`${firstName}'s profile is starting`);
+    await textArea.type(`Olá, ${firstName}!\n`);
     await textArea.type(message);
     await new Promise((resolve) => setTimeout(resolve, 4000));
     await page.waitForSelector(
@@ -91,7 +93,10 @@ const fs = require("fs");
     const closeButton = await page.$(
       ".msg-overlay-bubble-header__control.artdeco-button.artdeco-button--circle.artdeco-button--muted.artdeco-button--1.artdeco-button--tertiary.ember-view"
     );
+    console.log(`${firstName} is done :)`);
 
     await closeButton.click();
   }
+  console.log("All Done :D");
+  await browser.close();
 })();
