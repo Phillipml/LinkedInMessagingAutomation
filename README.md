@@ -2,33 +2,45 @@
 
 Automação inteligente para envio de mensagens personalizadas no LinkedIn usando Puppeteer. Sistema que automatiza o processo de networking profissional, permitindo envio em massa de mensagens personalizadas com nome do destinatário.
 
-## ✨ Funcionalidades
+# ✨ Funcionalidades
 
-- **Login Automatizado**: Autenticação automática no LinkedIn
-- **Mensagens Personalizadas**: Personalização com nome do destinatário
-- **Envio em Massa**: Processamento de múltiplos perfis simultaneamente
-- **Interface Visual**: Execução com navegador visível para monitoramento
-- **Configuração Flexível**: Arquivo JSON para lista de perfis
-- **Variáveis de Ambiente**: Configuração segura de credenciais
-- **Tratamento de Erros**: Atrasos inteligentes para estabilidade
+# Login Automatizado:
+Autenticação automática no LinkedIn
+## Mensagens Personalizadas:
+Personalização com nome do destinatário
+## Envio em Massa:
+Processamento de múltiplos perfis simultaneamente
+## Interface Visual:
+Execução com navegador visível para monitoramento
+## Configuração Flexível:
+Arquivo JSON para lista de perfis
+## Variáveis de Ambiente:
+Configuração segura de credenciais
+## Tratamento de Erros:
+Atrasos inteligentes para estabilidade
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
-- **Node.js** - Runtime JavaScript
-- **Puppeteer 20.7.4** - Automação de navegador
-- **dotenv 16.3.1** - Gerenciamento de variáveis de ambiente
-- **nodemon 2.0.22** - Desenvolvimento com hot reload
-- **Chrome/Chromium** - Navegador para automação
+## Node.js:
+Runtime JavaScript
+## Puppeteer 20.7.4:
+Automação de navegador
+## dotenv 16.3.1:
+Gerenciamento de variáveis de ambiente
+## nodemon 2.0.22:
+Desenvolvimento com hot reload
+## Chrome/Chromium:
+Navegador para automação
 
-## 🚀 Como Executar
+# 🚀 Como Executar
 
-### Pré-requisitos
+# Pré-requisitos
 
 - Node.js 14+ instalado
 - Conta ativa no LinkedIn
 - Navegador Chrome/Chromium
 
-### Instalação
+# Instalação
 
 1. **Clone o repositório:**
 ```bash
@@ -64,7 +76,7 @@ Edite o arquivo `profiles.json` com os perfis desejados:
 npm run dev
 ```
 
-## 📁 Estrutura do Projeto
+# 📁 Estrutura do Projeto
 
 ```
 LinkedInMessagingAutomation/
@@ -76,7 +88,7 @@ LinkedInMessagingAutomation/
 └── README.md            # Documentação
 ```
 
-## 🎯 Características Técnicas
+# 🎯 Características Técnicas
 
 - **Automação Web**: Puppeteer para controle do navegador
 - **Seletores CSS**: Localização precisa de elementos
@@ -86,7 +98,7 @@ LinkedInMessagingAutomation/
 - **Tratamento de Navegação**: Aguarda carregamento completo
 - **Logs Informativos**: Acompanhamento do progresso
 
-## 📝 Uso
+# 📝 Uso
 
 1. **Configure as credenciais** no arquivo `.env`
 2. **Adicione os perfis** no `profiles.json`
@@ -94,27 +106,27 @@ LinkedInMessagingAutomation/
 4. **Aguarde o login** e resolva o CAPTCHA manualmente
 5. **Monitore o progresso** no console e navegador
 
-## ⚠️ Considerações Importantes
+# ⚠️ Considerações Importantes
 
-### **Ética e Legalidade**
+# **Ética e Legalidade**
 - Use apenas para networking profissional legítimo
 - Respeite os termos de uso do LinkedIn
 - Evite spam ou mensagens não solicitadas
 - Mantenha frequência adequada entre envios
 
-### **Limitações Técnicas**
+# **Limitações Técnicas**
 - CAPTCHA deve ser resolvido manualmente
 - LinkedIn pode detectar automação excessiva
 - Ajuste os timeouts conforme sua conexão
 - Monitore o comportamento do LinkedIn
 
-### **Configurações Recomendadas**
+# **Configurações Recomendadas**
 - Use delays maiores para evitar detecção
 - Limite o número de perfis por execução
 - Varie o conteúdo das mensagens
 - Execute em horários comerciais
 
-## 🔧 Comandos Úteis
+# 🔧 Comandos Úteis
 
 ```bash
 # Instalar dependências
@@ -130,13 +142,18 @@ node --version
 npm list
 ```
 
-## 📄 Licença
+# 📄 Licença
 
 Este projeto está sob a licença [MIT](LICENSE).
 
 ---
 
-**Desenvolvido por:** Phillip M. Lopes  
-**Email:** phillipmlopes@gmail.com  
-**LinkedIn:** [phillipmlopes](https://www.linkedin.com/in/phillipmlopes/)  
-**GitHub:** [Phillipml](https://github.com/Phillipml)
+**Desenvolvido por:**
+Phillip Menezes
+
+**Email:**
+contato.phillip.menezes@gmail.com  
+**LinkedIn:**
+[Phillip Menezes](https://www.linkedin.com/in/phillip-menezes-063a39227/)  
+**GitHub:**
+[Phillipml](https://github.com/Phillipml/)
